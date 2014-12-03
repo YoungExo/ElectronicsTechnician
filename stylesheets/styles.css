@@ -34,6 +34,7 @@ body {
 
 header, section, footer {
   display: block;
+  
 }
 
 a {
@@ -176,7 +177,7 @@ header ul a strong {
 
 section {
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 14px;
   border-top: 1px solid #fff;
   background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #fafafa), color-stop(100%, #dedede));
   background: -webkit-linear-gradient(#fafafa, #dedede 700px);
@@ -190,6 +191,7 @@ section {
   -o-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
   position: relative;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -230,6 +232,7 @@ blockquote {
 
 img {
   max-width: 100%;
+  text-align: center;
 }
 
 code, pre {
@@ -251,6 +254,7 @@ pre code {
 li pre {
   margin-left: -60px;
   padding-left: 60px;
+  
 }
 
 table {
