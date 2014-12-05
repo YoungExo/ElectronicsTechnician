@@ -40,6 +40,7 @@ header, section, footer {
 a {
   color: #069;
   text-decoration: none;
+  text-align: center;
 }
 
 p {
