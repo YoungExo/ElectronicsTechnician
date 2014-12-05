@@ -40,12 +40,12 @@ header, section, footer {
 a {
   color: #069;
   text-decoration: none;
-  text-align: center;
 }
 
 p {
   margin: 0 0 20px;
   padding: 0;
+  text-align: center;
 }
 
 strong {
