@@ -9,7 +9,36 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
 
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -23,20 +52,23 @@
     
       </header>
       <section>
-        <h2>
+        <h3>
 <a id="Electronic Engineering Technicians" class="anchor" href="#Electronic Engineering Technicians" aria-hidden="true"><span class="octicon octicon-link"></span></a>Electronic Engineering Technicians</h3>
 
-<p> <strong>Electronic engineering technicians are involved in many aspects of design, development, testing and manufacturing.
+<p> Electronic engineering technicians are involved in many aspects of design, development, testing and manufacturing.
 They solve problems that may appear in areas of research, manufacturing, sales, construction, inspection and maintenance.
 Their work is specialized in applications while using learned principles of mathematics, science and engineering.
-This work is most often performed when assisting other scientists or engineers, especially in areas of development and research. </strong></p>
+This work is most often performed when assisting other scientists or engineers, especially in areas of development and research.</p>
 
  <img src="http://www.waynecc.edu/wp-content/uploads/engineering.jpg" width="300" align:"center">
- 
+ <a href="http://www.waynecc.edu/wp-content/uploads/engineering.jpg" rel="lightbox" onmouseover="rollover('button1','http://fc06.deviantart.net/fs70/i/2012/356/2/b/chibi_trollface____by_spacebunny2221-d5os8z2.png')" 
+            onmouseout="rollover('button1','http://www.waynecc.edu/wp-content/uploads/engineering.jpg')"> 
+<img name="button1" src="http://www.waynecc.edu/wp-content/uploads/engineering.jpg"></a>
+
  <p> Their work involves testing and product evaluation where electrical and electronic technicians 
  may measure and perform diagnostic testing to repair and adjust equipment.</p>
 
-<h2>External Links</h2>
+<h3>External Links</h3>
     Click<a href="http://youngexo.github.io/ElectronicsTechnician/education"> Here</a> 
     for information about the education required for this job
 
@@ -45,7 +77,8 @@ This work is most often performed when assisting other scientists or engineers, 
     <li>job salary</li>
     <li>How computer science is used in the career</li>
       
-  
+    
+
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
